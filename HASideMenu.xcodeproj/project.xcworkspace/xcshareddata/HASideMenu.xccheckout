@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E8CA9277-CC3F-4972-9D13-F32C4599E58F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>HASideMenu</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>33DC29B356FD5C5F976A2F854ED877CDDCEB2880</key>
 		<string>https://github.com/irong/HASideMenu.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HASideMenu.xcodeproj/project.xcworkspace</string>
+	<string>HASideMenu.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>33DC29B356FD5C5F976A2F854ED877CDDCEB2880</key>

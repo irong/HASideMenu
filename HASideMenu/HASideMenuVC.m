@@ -10,7 +10,7 @@
 
 @interface HASideMenuVC ()
 {
-    
+    UIImageView *_imgViewBG;
 }
 
 @end
@@ -19,11 +19,18 @@
 
 #pragma mark Instance life cycle
 
-- (HASideMenuVC *)initWithContentVC:(UIViewController *)contentVC
+
+- (id)initWithContentVC:(UIViewController *)contentVC
                              leftVC:(UIViewController *)leftVC
                             rightVC:(UIViewController *)rightVC
 {
-    return nil;
+    self = [super init];
+    if (self) {
+        _contentVC = contentVC;
+        _leftVC = leftVC;
+        _rightVC = rightVC;
+    }
+    return self;
 }
 
 #pragma mark View life cycle
@@ -31,6 +38,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //初始化背景图
+    _imgViewBG = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    _imgViewBG.image = self.backgroundImage;
+    _imgViewBG.contentMode = UIViewContentModeScaleAspectFill;
+    _imgViewBG.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.view addSubview:_imgViewBG];
+    
+    if (self.leftVC) {
+        [self addChildViewController:self.leftVC];
+        self.leftVC.view.frame = self.view.bounds;
+        self.leftVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        [self.view addSubview:self.leftVC.view];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -50,7 +50,22 @@
         self.leftVC.view.frame = self.view.bounds;
         self.leftVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         [self.view addSubview:self.leftVC.view];
+        [self.leftVC didMoveToParentViewController:self];
     }
+    if (self.rightVC) {
+        [self addChildViewController:self.rightVC];
+        self.rightVC.view.frame = self.view.bounds;
+        self.rightVC.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:self.rightVC.view];
+        [self.rightVC didMoveToParentViewController:self];
+    }
+    
+    [self addChildViewController:self.contentVC];
+    self.contentVC.view.frame = self.view.bounds;
+    self.contentVC.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.view addSubview:self.contentVC.view];
+    [self.contentVC didMoveToParentViewController:self];
+    
     
 }
 

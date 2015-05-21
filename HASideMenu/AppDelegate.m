@@ -26,6 +26,7 @@
     RightMenuVC *rightVC =[[RightMenuVC alloc] init];
     UINavigationController *navigationVC = [[UINavigationController alloc] initWithRootViewController:[[FirstVC alloc] init]];
     HASideMenuVC *sideMenuVC = [[HASideMenuVC alloc] initWithContentVC:navigationVC leftVC:leftVC rightVC:rightVC];
+    sideMenuVC.backgroundImage = [UIImage imageNamed:@"Stars"];
     self.window.rootViewController = sideMenuVC;
     [self.window makeKeyAndVisible];
     

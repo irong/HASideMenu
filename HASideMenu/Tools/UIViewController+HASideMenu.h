@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HASideMenuVC.h"
 
 @interface UIViewController (HASideMenu)
+
+@property (nonatomic, readonly, strong) HASideMenuVC *sideMenuVC;
 
 - (void)presentLeftVC:(id)sender;
 - (void)presentRightVC:(id)sender;

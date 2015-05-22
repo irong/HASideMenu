@@ -22,5 +22,7 @@
                    leftVC:(UIViewController *)leftVC
                   rightVC:(UIViewController *)rightVC;
 
+- (void)presentLeftMenuVC;
+- (void)presentRightMenuVC;
 
 @end

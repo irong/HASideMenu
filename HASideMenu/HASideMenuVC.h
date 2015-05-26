@@ -11,13 +11,22 @@
 
 @interface HASideMenuVC : UIViewController
 
-@property(nonatomic, strong) UIViewController *contentVC;
-@property(nonatomic, strong) UIViewController *leftVC;
-@property(nonatomic, strong) UIViewController *rightVC;
+@property (nonatomic, strong) UIViewController *contentVC;
+@property (nonatomic, strong) UIViewController *leftVC;
+@property (nonatomic, strong) UIViewController *rightVC;
+@property (nonatomic, strong) UIImage *backgroundImage;
+@property (nonatomic, assign) CGAffineTransform menuVCTransformation;
+@property (nonatomic, assign) NSTimeInterval animationDuration;
 
-@property(nonatomic, strong) UIImage *backgroundImage;
-
-
+/**
+ *  初始化方法
+ *
+ *  @param contentVC 内容 VC
+ *  @param leftVC    左 VC
+ *  @param rightVC   右 VC
+ *
+ *  @return  返回HASideMenuVC
+ */
 - (HASideMenuVC *)initWithContentVC:(UIViewController *)contentVC
                    leftVC:(UIViewController *)leftVC
                   rightVC:(UIViewController *)rightVC;

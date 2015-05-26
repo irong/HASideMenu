@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE0B8C511B09EF84007DC516 /* UIViewController+HASideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0B8C501B09EF84007DC516 /* UIViewController+HASideMenu.m */; };
 		CE3C055C1B05DBCC007882D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3C055B1B05DBCC007882D7 /* main.m */; };
 		CE3C055F1B05DBCC007882D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3C055E1B05DBCC007882D7 /* AppDelegate.m */; };
 		CE3C05671B05DBCC007882D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3C05661B05DBCC007882D7 /* Images.xcassets */; };
@@ -17,11 +16,10 @@
 		CE3C05881B05DD65007882D7 /* LeftMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3C05871B05DD65007882D7 /* LeftMenuVC.m */; };
 		CE3C058B1B05DD81007882D7 /* RightMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3C058A1B05DD81007882D7 /* RightMenuVC.m */; };
 		CE3C058E1B05DDC7007882D7 /* HASideMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3C058D1B05DDC7007882D7 /* HASideMenuVC.m */; };
+		CEE82F7E1B12C7F90048BF5F /* UIViewController+HASideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE82F7D1B12C7F90048BF5F /* UIViewController+HASideMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE0B8C4F1B09EF84007DC516 /* UIViewController+HASideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HASideMenu.h"; sourceTree = "<group>"; };
-		CE0B8C501B09EF84007DC516 /* UIViewController+HASideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HASideMenu.m"; sourceTree = "<group>"; };
 		CE3C05561B05DBCC007882D7 /* HASideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HASideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3C055A1B05DBCC007882D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3C055B1B05DBCC007882D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,6 +37,8 @@
 		CE3C058A1B05DD81007882D7 /* RightMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuVC.m; sourceTree = "<group>"; };
 		CE3C058C1B05DDC7007882D7 /* HASideMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASideMenuVC.h; sourceTree = "<group>"; };
 		CE3C058D1B05DDC7007882D7 /* HASideMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASideMenuVC.m; sourceTree = "<group>"; };
+		CEE82F7C1B12C7F90048BF5F /* UIViewController+HASideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HASideMenu.h"; sourceTree = "<group>"; };
+		CEE82F7D1B12C7F90048BF5F /* UIViewController+HASideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HASideMenu.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,15 +52,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE0B8C4E1B09EF5C007DC516 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				CE0B8C4F1B09EF84007DC516 /* UIViewController+HASideMenu.h */,
-				CE0B8C501B09EF84007DC516 /* UIViewController+HASideMenu.m */,
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
 		CE3C054D1B05DBCB007882D7 = {
 			isa = PBXGroup;
 			children = (
@@ -80,9 +71,9 @@
 		CE3C05581B05DBCC007882D7 /* HASideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				CE0B8C4E1B09EF5C007DC516 /* Tools */,
 				CE3C055D1B05DBCC007882D7 /* AppDelegate.h */,
 				CE3C055E1B05DBCC007882D7 /* AppDelegate.m */,
+				CEE82F7B1B12C7F90048BF5F /* Control */,
 				CE3C057F1B05DCEF007882D7 /* VCS */,
 				CE3C05661B05DBCC007882D7 /* Images.xcassets */,
 				CE3C05681B05DBCC007882D7 /* LaunchScreen.xib */,
@@ -115,6 +106,15 @@
 				CE3C058A1B05DD81007882D7 /* RightMenuVC.m */,
 			);
 			name = VCS;
+			sourceTree = "<group>";
+		};
+		CEE82F7B1B12C7F90048BF5F /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				CEE82F7C1B12C7F90048BF5F /* UIViewController+HASideMenu.h */,
+				CEE82F7D1B12C7F90048BF5F /* UIViewController+HASideMenu.m */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +189,7 @@
 				CE3C055F1B05DBCC007882D7 /* AppDelegate.m in Sources */,
 				CE3C05821B05DD2D007882D7 /* FirstVC.m in Sources */,
 				CE3C05851B05DD43007882D7 /* SecondVC.m in Sources */,
-				CE0B8C511B09EF84007DC516 /* UIViewController+HASideMenu.m in Sources */,
+				CEE82F7E1B12C7F90048BF5F /* UIViewController+HASideMenu.m in Sources */,
 				CE3C055C1B05DBCC007882D7 /* main.m in Sources */,
 				CE3C058B1B05DD81007882D7 /* RightMenuVC.m in Sources */,
 				CE3C05881B05DD65007882D7 /* LeftMenuVC.m in Sources */,
